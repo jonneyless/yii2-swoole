@@ -15,12 +15,12 @@
         }
     ],
     "require": {
-        "php": "~7.4",
+        "php": ">=7.4",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-pcntl": "*",
         "yiisoft/yii2": "~2.0.14",
-        "symfony/console": ">=2.7.0"
+        "symfony/console": "~v5.1.0"
     },
     "require-dev": {
         "swoole/ide-helper": "~4.3.0",
@@ -38,5 +38,24 @@
     },
     "suggest": {
         "ext-swoole": "install ext-swoole when use php swoole extension"
-    }
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": true
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.cn"
+        }
+    ]
 }
