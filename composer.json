@@ -38,24 +38,5 @@
     },
     "suggest": {
         "ext-swoole": "install ext-swoole when use php swoole extension"
-    },
-    "config": {
-        "process-timeout": 1800,
-        "fxp-asset": {
-            "enabled": true
-        },
-        "allow-plugins": {
-            "yiisoft/yii2-composer": true
-        }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://mirrors.aliyun.com/composer/"
-        },
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.cn"
-        }
-    ]
+    }
 }
