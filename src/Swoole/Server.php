@@ -2,13 +2,13 @@
 
 namespace ijony\yiis\Swoole;
 
-use ijony\yiis\Illuminate\LogTrait;
 use ijony\yiis\Swoole\Process\ProcessTitleTrait;
 use ijony\yiis\Swoole\Socket\PortInterface;
 use ijony\yiis\Swoole\Task\BaseTask;
 use ijony\yiis\Swoole\Task\Event;
 use ijony\yiis\Swoole\Task\Listener;
 use ijony\yiis\Swoole\Task\Task;
+use ijony\yiis\traits\LogTrait;
 use Swoole\Http\Request as SwooleRequest;
 use Swoole\Http\Response as SwooleResponse;
 use Swoole\Http\Server as HttpServer;

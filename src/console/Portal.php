@@ -135,7 +135,7 @@ EOS;
             }
             $passOptionStr .= sprintf('--%s%s ', $key, is_bool($value) ? '' : ('=' . $value));
         }
-        $statusCode = self::runArtisanCommand($this->basePath, trim('yii2 swoole config ' . $passOptionStr));
+        $statusCode = self::runYiiCommand($this->basePath, trim('yii2 swoole config ' . $passOptionStr));
         if ($statusCode !== 0) {
             return $statusCode;
         }
