@@ -5,7 +5,7 @@ return [
     'listen_port' => env('YIIS_LISTEN_PORT', 5200),
     'socket_type' => env('YIIS_SOCKET_TYPE', 1),
     'enable_coroutine_runtime' => env('COROUTINE_ENV') === 'true',
-    'max_coro_num' => env('MAX_COROUTINE_NUM', 3000),
+    'max_coroutine_num' => env('MAX_COROUTINE_NUM', 3000),
     'server' => env('YIIS_SERVER', 'YiiS'),
     'handle_static' => env('YIIS_HANDLE_STATIC') === 'true',
     'yii_base_path' => env('YIIS_BASE_PATH', dirname(Yii::getAlias('@vendor'))),
